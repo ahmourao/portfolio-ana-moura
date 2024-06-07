@@ -1,0 +1,220 @@
+/* Definindo variáveis de cor */
+:root {
+    --background-color: #ECDBCE;
+    --text-color: #1E1E1E;
+    --highlight-color: #F97B22;
+    --button-hover-color: #ff5733;
+    --border-color: #000;
+    --content-background-color: #ECDBCE; /* Alinhado ao plano de fundo do body */
+    --content-border-color: #ddd;
+}
+
+/* Define a fonte padrão, cor de fundo, margens e preenchimento do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte Arial */
+    background-color: var(--background-color); /* Define a cor de fundo */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    color: var(--text-color); /* Define a cor do texto */
+}
+
+/* Define o estilo do cabeçalho */
+header {
+    display: flex; /* Usa o modelo de caixa flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Adiciona preenchimento de 20px */
+}
+
+/* Define o estilo do título h1 */
+h1 {
+    font-size: 3em; /* Define o tamanho da fonte */
+    margin: 20px 0; /* Adiciona margens acima e abaixo */
+}
+
+/* Define o estilo da lista de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 10px 0 0; /* Adiciona margem acima */
+    padding: 0; /* Remove o preenchimento */
+    display: flex; /* Usa o modelo de caixa flexível */
+    gap: 20px; /* Adiciona um espaço entre os itens */
+}
+
+/* Define o estilo dos itens de lista */
+nav ul li {
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+}
+
+/* Define o estilo dos links dentro dos itens de lista */
+nav ul li a {
+    text-decoration: none; /* Remove a sublinha dos links */
+    color: var(--text-color); /* Define a cor do texto */
+    font-weight: bold; /* Define o peso da fonte */
+    padding: 10px; /* Adiciona preenchimento */
+}
+
+/* Define o estilo do link ativo */
+nav ul li.active a {
+    color: var(--highlight-color); /* Define a cor do texto */
+    border-top: 2px solid var(--highlight-color); /* Adiciona uma borda superior laranja */
+}
+
+/* Define a linha de navegação */
+.nav-line {
+    width: calc(100% - 300px); /* Define a largura da linha */
+    border-bottom: 2px solid var(--border-color); /* Adiciona uma borda inferior preta */
+    margin-top: 10px; /* Adiciona margem acima */
+}
+
+/* Define o estilo principal */
+main {
+    text-align: center; /* Centraliza o texto */
+    padding: 0 150px; /* Adiciona preenchimento lateral */
+}
+
+/* Define o estilo da seção "Sobre mim" */
+#sobre-mim {
+    margin-bottom: 50px; /* Adiciona margem abaixo */
+}
+
+/* Define o estilo do título h2 */
+h2 {
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    margin: 100px 0; /* Adiciona margens acima e abaixo */
+}
+
+/* Define o estilo do botão */
+button#quem-sou-eu {
+    padding: 20px 40px; /* Adiciona preenchimento */
+    background-color: var(--highlight-color); /* Define a cor de fundo */
+    border: none; /* Remove a borda */
+    color: #fff; /* Define a cor do texto */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    font-size: 1.5em; /* Define o tamanho da fonte */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-top: 20px; /* Adiciona margem acima */
+}
+
+/* Define o estilo do botão quando o mouse passa por cima */
+button#quem-sou-eu:hover {
+    background-color: var(--button-hover-color); /* Altera a cor de fundo */
+}
+
+/* Define a classe oculta */
+.hidden {
+    display: none; /* Esconde o elemento */
+}
+
+/* Define o contêiner dos triângulos */
+.triangles-container {
+    display: flex; /* Usa o modelo de caixa flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Adiciona um espaço entre os itens */
+    margin: 100px 0; /* Adiciona margens acima e abaixo */
+}
+
+/* Define o estilo dos triângulos */
+.triangles {
+    display: flex; /* Usa o modelo de caixa flexível */
+    gap: 10px; /* Adiciona um espaço entre os triângulos */
+}
+
+/* Define o estilo de cada triângulo */
+.triangle1, .triangle2, .triangle3, .triangle4 {
+    width: 0; /* Define a largura como 0 */
+    height: 0; /* Define a altura como 0 */
+    border-left: 20px solid transparent; /* Adiciona borda à esquerda */
+    border-right: 20px solid transparent; /* Adiciona borda à direita */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+}
+
+/* Define o estilo específico de cada triângulo */
+.triangle1 {
+    border-left: 20px solid var(--highlight-color); /* Adiciona borda à esquerda laranja */
+}
+
+.triangle2 {
+    border-left: 25px solid var(--highlight-color); /* Adiciona borda à esquerda laranja */
+}
+
+.triangle3 {
+    border-left: 30px solid var(--highlight-color); /* Adiciona borda à esquerda laranja */
+}
+
+.triangle4 {
+    border-left: 35px solid var(--highlight-color); /* Adiciona borda à esquerda laranja */
+}
+
+/* Define o estilo do triângulo na parte inferior */
+.triangle-up {
+    border-left: 20px solid transparent; /* Adiciona borda à esquerda */
+    border-right: 20px solid transparent; 
+    border-bottom: 30px solid var(--highlight-color); /* Adiciona borda inferior laranja */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    animation: move-up 1s infinite alternate; /* Adiciona animação */
+}
+
+/* Define a animação para mover para a esquerda */
+@keyframes move-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+}
+
+/* Define a animação para mover para a direita */
+@keyframes move-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(10px); }
+}
+
+/* Define a animação para mover para baixo */
+@keyframes move-up {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Aplica a animação e rotação aos triângulos do lado esquerdo */
+#left-triangles .triangle1, #left-triangles .triangle2, #left-triangles .triangle3, #left-triangles .triangle4 {
+    animation: move-right 1s infinite alternate; /* Animação para mover para a direita */
+    transform: rotate(90deg); /* Rota os triângulos para apontarem para a direita */
+}
+
+/* Aplica a animação e rotação aos triângulos do lado direito */
+#right-triangles .triangle1, #right-triangles .triangle2, #right-triangles .triangle3, #right-triangles .triangle4 {
+    animation: move-left 1s infinite alternate; /* Animação para mover para a esquerda */
+    transform: rotate(-90deg); /* Rota os triângulos para apontarem para a esquerda */
+}
+
+/* Define o estilo da seção de conteúdo */
+section#conteudo {
+    background-color: var(--content-background-color); /* Alinha a cor do plano de fundo */
+    padding: 0; /* Remove o preenchimento */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 800px; /* Define a largura máxima */
+    margin: 150px auto; /* Adiciona margens acima e abaixo, e centraliza horizontalmente */
+}
+
+/* Define o estilo da foto de perfil */
+.profile-photo {
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    border-radius: 50%; /* Adiciona bordas arredondadas para formar um círculo */
+    display: block; /* Define o modo de exibição como bloco */
+    margin: 0 auto 40px; /* Centraliza a imagem e adiciona margem maior abaixo */
+}
+
+/* Define o estilo do texto da seção de conteúdo */
+.content-text {
+    margin-top: 20px; /* Adiciona margem superior */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Define o estilo do triângulo ao lado do texto */
+.triangle-right {
+    display: flex; /* Usa o modelo de caixa flexível */
+    justify-content: flex-end; /* Alinha o triângulo à direita */
+    align-items: flex-start; /* Alinha o triângulo ao topo */
+    transform: rotate(0deg); /* Rotaciona o triângulo para apontar para cima */
+    margin-top: -20px; /* Ajusta a margem para alinhar com o topo do texto */
+}
