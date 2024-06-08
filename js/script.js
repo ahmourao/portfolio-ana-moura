@@ -123,6 +123,7 @@ document.querySelectorAll('.project-button').forEach(button => {
     });
 });
 
+// Adiciona evento de clique aos botões das formações complementares
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.area-button');
     buttons.forEach(button => {

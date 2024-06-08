@@ -3,17 +3,18 @@
     --background-color: #ECDBCE;
     --text-color: #1E1E1E;
     --highlight-color: #F97B22;
-    --button-hover-color: #ff5733;
+    --button-hover-color: #DA600A;
     --border-color: #000;
     --content-background-color: #ECDBCE;
     --content-border-color: #ddd;
     --box-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* Define a fonte padrão, cor de fundo, margens e preenchimento do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    /* Define a fonte padrão */
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins como padrão */
     background-color: var(--background-color);
     /* Define a cor de fundo */
     margin: 0;
