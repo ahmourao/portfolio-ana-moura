@@ -17,7 +17,9 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color); /* Define a cor do texto */
+    scroll-behavior: smooth; /* Suaviza a rolagem */
 }
+
 
 /* Define o estilo do cabeçalho */
 header {
@@ -76,7 +78,7 @@ h2 {
     font-size: 2.5em; /* Define o tamanho da fonte */
     margin: 100px 0; /* Adiciona margens acima e abaixo */
 }
-
+/* Estilo para o botão "Quem sou eu?" */
 button#quem-sou-eu {
     padding: 20px 40px; /* Adiciona preenchimento interno */
     background-color: var(--highlight-color); /* Define a cor de fundo */
@@ -88,6 +90,7 @@ button#quem-sou-eu {
     margin-top: 20px; /* Adiciona margem superior */
     box-shadow: 0 4px 6px var(--box-shadow-color); /* Adiciona sombra */
     transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições */
+    animation: continuous-movement 0.9s ease-in-out infinite; /* Adiciona animação contínua */
 }
 
 button#quem-sou-eu:hover {
@@ -95,6 +98,14 @@ button#quem-sou-eu:hover {
     transform: translateY(-3px); /* Adiciona efeito de elevação */
     box-shadow: 0 6px 8px var(--box-shadow-color); /* Adiciona sombra mais intensa */
 }
+
+@keyframes continuous-movement {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+
 
 .hidden {
     display: none; /* Esconde o elemento */
@@ -112,12 +123,27 @@ section#conteudo {
 
 /* Estilo para a foto de perfil */
 .profile-photo {
-    width: 150px; /* Define a largura */
-    height: 150px; /* Define a altura */
-    border-radius: 50%; /* Define as bordas como arredondadas */
+    height: 200px; /* Define a altura */
+    width: auto; /* Define a largura */
+    border-radius: 8px; /* Define as bordas como arredondadas */
     display: block; /* Exibe o elemento como um bloco */
     margin: 0 auto 40px; /* Centraliza a imagem e adiciona margem inferior */
+    border: #F97B22 solid 3px; /* Define a borda */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona mais sombra */
+    animation: subtle-move 1s infinite alternate ease-in-out; /* Acelera a animação */
 }
+
+/* Define a animação de movimento sutil */
+@keyframes subtle-move {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    100% {
+        transform: translateY(-5px); /* Move para cima */
+    }
+}
+
+
 
 /* Estilo para o texto do conteúdo */
 .content-text {
@@ -274,3 +300,33 @@ section#conteudo {
     font-weight: bold; /* Define o peso da fonte como negrito */
     margin-top: 10px; /* Adiciona margem acima */
 }
+/* Estilo para a seção "Projetos de Pesquisa Científica" */
+#projetos-pesquisa-cientifica {
+    margin: 150px 0; /* Adiciona margens acima e abaixo */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Define a largura máxima */
+    margin: 150px auto; /* Centraliza horizontalmente a seção e adiciona margens acima e abaixo */
+}
+
+#projetos-pesquisa-cientifica h2 {
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+#projetos-pesquisa-cientifica p {
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    line-height: 1.6; /* Define a altura da linha */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    text-align: justify; /* Justifica o texto para melhor legibilidade */
+}
+
+#projetos-pesquisa-cientifica a {
+    color: var(--highlight-color); /* Define a cor do link */
+    text-decoration: none; /* Remove a sublinhado */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+#projetos-pesquisa-cientifica a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+

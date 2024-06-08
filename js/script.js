@@ -10,12 +10,14 @@ document.getElementById('triangle-bottom').addEventListener('click', function() 
     document.getElementById('sobre-mim').scrollIntoView({ behavior: 'smooth' });
 });
 
+
 // Navega para a seção "Sobre Mim" e destaca o item de navegação ativo
 document.getElementById('link-sobre-mim').addEventListener('click', function() {
     document.querySelector('li.active').classList.remove('active');
     this.classList.add('active');
     document.getElementById('sobre-mim').classList.remove('hidden');
     document.getElementById('projetos-academicos').classList.add('hidden');
+    document.getElementById('projetos-pesquisa-cientifica').classList.add('hidden');
     document.getElementById('conteudo').classList.add('hidden');
     document.getElementById('sobre-mim').scrollIntoView({ behavior: 'smooth' });
 });
@@ -26,8 +28,23 @@ document.getElementById('link-projetos-academicos').addEventListener('click', fu
     this.classList.add('active');
     document.getElementById('sobre-mim').classList.add('hidden');
     document.getElementById('projetos-academicos').classList.remove('hidden');
+    document.getElementById('projetos-pesquisa-cientifica').classList.add('hidden');
+    document.getElementById('conteudo').classList.add('hidden');
     document.getElementById('projetos-academicos').scrollIntoView({ behavior: 'smooth' });
 });
+
+// Navega para a seção "Projetos de Pesquisa Científica" e destaca o item de navegação ativo
+document.getElementById('link-projetos-pesquisa-cientifica').addEventListener('click', function() {
+    document.querySelector('li.active').classList.remove('active');
+    this.classList.add('active');
+    document.getElementById('sobre-mim').classList.add('hidden');
+    document.getElementById('projetos-academicos').classList.add('hidden');
+    document.getElementById('projetos-pesquisa-cientifica').classList.remove('hidden');
+    document.getElementById('conteudo').classList.add('hidden');
+    document.getElementById('projetos-pesquisa-cientifica').scrollIntoView({ behavior: 'smooth' });
+});
+
+
 
 // Rola a tela até o topo ao clicar no triângulo
 document.getElementById('triangle-up').addEventListener('click', function() {
