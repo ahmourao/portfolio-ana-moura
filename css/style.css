@@ -2,8 +2,8 @@
 :root {
     --background-color: #ECDBCE;
     --text-color: #1E1E1E;
-    --highlight-color: #F97B22;
-    --button-hover-color: #DA600A;
+    --highlight-color: #DA600A;
+    --button-hover-color: #B14D07;
     --border-color: #000;
     --content-background-color: #ECDBCE;
     --content-border-color: #ddd;
@@ -24,7 +24,6 @@ body {
     scroll-behavior: smooth;
     /* Suaviza a rolagem */
 }
-
 
 /* Define o estilo do cabeçalho */
 header {
@@ -155,8 +154,6 @@ button#quem-sou-eu:hover {
     }
 }
 
-
-
 .hidden {
     display: none;
     /* Esconde o elemento */
@@ -208,8 +205,6 @@ section#conteudo {
         /* Move para cima */
     }
 }
-
-
 
 /* Estilo para o texto do conteúdo */
 .content-text {
@@ -524,7 +519,6 @@ section#conteudo {
     /* Define a cor do texto */
 }
 
-
 #formacoes-complementares {
     padding: 50px 0;
     text-align: center;
@@ -811,4 +805,44 @@ footer {
 .logo-container p {
     font-size: 1em;
     /* Tamanho da fonte */
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    main {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+
+    .nav-line {
+        width: 100%;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-button {
+        width: 100%;
+    }
+
+    .curriculo-container {
+        flex-direction: column;
+    }
+
+    .curriculo-button {
+        width: 100%;
+    }
 }
