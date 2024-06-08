@@ -37,6 +37,11 @@ header {
     /* Adiciona preenchimento ao redor do cabeçalho */
 }
 
+/* Estilo para justificar texto em parágrafos */
+p {
+    text-align: justify;
+}
+
 h1 {
     font-size: 3em;
     /* Define o tamanho da fonte */
@@ -102,7 +107,7 @@ main {
 h2 {
     font-size: 2.5em;
     /* Define o tamanho da fonte */
-    margin: 100px 0;
+    
     /* Adiciona margens acima e abaixo */
 }
 
@@ -230,9 +235,16 @@ section#conteudo {
 
 /* Estilo para a seção "Projetos Acadêmicos" */
 #projetos-academicos {
-    margin: 150px 0;
+    margin: 90px 0;
     /* Adiciona margens acima e abaixo */
+    text-align: center;
 }
+
+#projetos-academicos h2 {
+    font-size: 2.5em;
+    margin: 20px 0; /* Diminuir a margem inferior */
+}
+
 
 /* Estilo para os botões de projeto */
 .project-buttons {
@@ -244,8 +256,8 @@ section#conteudo {
     /* Adiciona espaço entre os botões */
     justify-content: center;
     /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Diminuir a margem superior */
     margin-bottom: 50px;
-    /* Adiciona margem inferior */
 }
 
 .project-button {
@@ -262,7 +274,7 @@ section#conteudo {
     /* Define o tamanho da fonte */
     border-radius: 5px;
     /* Adiciona bordas arredondadas */
-    width: 250px;
+    width: calc(33.333% - 40px); /* Ajuste a largura dos botões para 33.333% do contêiner, menos o espaço de gap */
     /* Define a largura dos botões */
     box-shadow: 0 4px 6px var(--box-shadow-color);
     /* Adiciona sombra */
@@ -439,13 +451,12 @@ section#conteudo {
 
 /* Estilo para a seção "Projetos de Pesquisa Científica" */
 #projetos-pesquisa-cientifica {
-    margin: 150px 0;
     /* Adiciona margens acima e abaixo */
     text-align: center;
     /* Centraliza o texto */
     max-width: 800px;
     /* Define a largura máxima */
-    margin: 150px auto;
+    margin: 80px auto;
     /* Centraliza horizontalmente a seção e adiciona margens acima e abaixo */
 }
 
@@ -485,7 +496,7 @@ section#conteudo {
 #habilidades {
     text-align: center;
     /* Centraliza o texto */
-    margin: 150px 0;
+    margin: 80px 0;
     /* Adiciona margens acima e abaixo */
 }
 
@@ -520,7 +531,7 @@ section#conteudo {
 }
 
 #formacoes-complementares {
-    padding: 50px 0;
+    margin: 80px 0;
     text-align: center;
 }
 
@@ -667,7 +678,7 @@ section#conteudo {
 
 /* Estilo para a seção de Currículo */
 #curriculo {
-    margin: 150px 0;
+    margin: 80px 0;
     /* Adiciona margens acima e abaixo */
     text-align: center;
     /* Centraliza o texto */
@@ -683,19 +694,20 @@ section#conteudo {
 .curriculo-container {
     display: flex;
     /* Usa o modelo de caixa flexível */
-    justify-content: space-around;
+    justify-content: center;
     /* Distribui o espaço ao redor dos itens */
     flex-wrap: wrap;
     /* Permite a quebra de linha dos itens */
-    gap: 40px;
-    /* Adiciona espaço entre os itens */
+    gap: 10px; /* Reduz o espaço entre as colunas */
 }
 
 .curriculo-section {
     flex: 1;
     /* Faz com que cada seção ocupe o mesmo espaço */
     min-width: 300px;
-    /* Define a largura mínima */
+    /* Adiciona um limite mínimo para a largura das colunas */
+    max-width: 350px; 
+    /* Adiciona um limite máximo para a largura das colunas*/
 }
 
 .curriculo-section h3 {

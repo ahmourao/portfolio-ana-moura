@@ -115,7 +115,7 @@ document.querySelectorAll('.fixed-triangle').forEach(triangle => {
 });
 
 
-// Adiciona evento de clique aos botões dos projetos
+// Adiciona evento de clique aos botões dos projetos acadêmicos
 document.querySelectorAll('.project-button').forEach(button => {
     button.addEventListener('click', function() {
         const targetId = this.getAttribute('data-target');
