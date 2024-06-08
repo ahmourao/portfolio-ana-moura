@@ -12,61 +12,86 @@
 
 /* Define a fonte padrão, cor de fundo, margens e preenchimento do corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    background-color: var(--background-color); /* Define a cor de fundo */
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
+    background-color: var(--background-color);
+    /* Define a cor de fundo */
     margin: 0;
     padding: 0;
-    color: var(--text-color); /* Define a cor do texto */
-    scroll-behavior: smooth; /* Suaviza a rolagem */
+    color: var(--text-color);
+    /* Define a cor do texto */
+    scroll-behavior: smooth;
+    /* Suaviza a rolagem */
 }
 
 
 /* Define o estilo do cabeçalho */
 header {
-    display: flex; /* Usa o modelo de caixa flexível */
-    flex-direction: column; /* Define a direção dos itens como coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    padding: 20px; /* Adiciona preenchimento ao redor do cabeçalho */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    flex-direction: column;
+    /* Define a direção dos itens como coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    padding: 20px;
+    /* Adiciona preenchimento ao redor do cabeçalho */
 }
 
 h1 {
-    font-size: 3em; /* Define o tamanho da fonte */
-    margin: 20px 0; /* Adiciona margens acima e abaixo */
+    font-size: 3em;
+    /* Define o tamanho da fonte */
+    margin: 20px 0;
+    /* Adiciona margens acima e abaixo */
 }
 
 nav ul {
-    list-style: none; /* Remove os marcadores da lista */
+    list-style: none;
+    /* Remove os marcadores da lista */
     margin: 10px 0 0;
     padding: 0;
-    display: flex; /* Usa o modelo de caixa flexível */
-    gap: 20px; /* Adiciona espaço entre os itens */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    gap: 20px;
+    /* Adiciona espaço entre os itens */
 }
 
 nav ul li {
-    cursor: pointer; /* Define o cursor como ponteiro ao passar sobre os itens */
+    cursor: pointer;
+    /* Define o cursor como ponteiro ao passar sobre os itens */
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove a sublinhado dos links */
-    color: var(--text-color); /* Define a cor do texto */
-    font-weight: bold; /* Define o peso da fonte como negrito */
-    padding: 10px; /* Adiciona preenchimento interno aos links */
+    text-decoration: none;
+    /* Remove a sublinhado dos links */
+    color: var(--text-color);
+    /* Define a cor do texto */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+    padding: 10px;
+    /* Adiciona preenchimento interno aos links */
 }
 
 nav ul li.active a {
-    color: var(--highlight-color); /* Define a cor do texto ativo */
-    border-top: 2px solid var(--highlight-color); /* Adiciona uma borda superior ao item ativo */
+    color: var(--highlight-color);
+    /* Define a cor do texto ativo */
+    border-top: 2px solid var(--highlight-color);
+    /* Adiciona uma borda superior ao item ativo */
 }
 
 .nav-line {
-    width: calc(100% - 300px); /* Define a largura da linha de navegação */
-    border-bottom: 2px solid var(--border-color); /* Define a cor e espessura da borda inferior */
-    margin-top: 10px; /* Adiciona margem superior */
+    width: calc(100% - 300px);
+    /* Define a largura da linha de navegação */
+    border-bottom: 2px solid var(--border-color);
+    /* Define a cor e espessura da borda inferior */
+    margin-top: 10px;
+    /* Adiciona margem superior */
 }
 
 main {
-    text-align: center; /* Centraliza o texto */
-    padding: 0 150px; /* Adiciona preenchimento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 0 150px;
+    /* Adiciona preenchimento interno */
 }
 
 /* Estilo para a seção "Sobre mim" */
@@ -75,71 +100,111 @@ main {
 }
 
 h2 {
-    font-size: 2.5em; /* Define o tamanho da fonte */
-    margin: 100px 0; /* Adiciona margens acima e abaixo */
+    font-size: 2.5em;
+    /* Define o tamanho da fonte */
+    margin: 100px 0;
+    /* Adiciona margens acima e abaixo */
 }
+
 /* Estilo para o botão "Quem sou eu?" */
 button#quem-sou-eu {
-    padding: 20px 40px; /* Adiciona preenchimento interno */
-    background-color: var(--highlight-color); /* Define a cor de fundo */
+    padding: 20px 40px;
+    /* Adiciona preenchimento interno */
+    background-color: var(--highlight-color);
+    /* Define a cor de fundo */
     border: none;
-    color: #fff; /* Define a cor do texto */
-    cursor: pointer; /* Define o cursor como ponteiro */
-    font-size: 1.5em; /* Define o tamanho da fonte */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    margin-top: 20px; /* Adiciona margem superior */
-    box-shadow: 0 4px 6px var(--box-shadow-color); /* Adiciona sombra */
-    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições */
-    animation: continuous-movement 0.9s ease-in-out infinite; /* Adiciona animação contínua */
+    color: #fff;
+    /* Define a cor do texto */
+    cursor: pointer;
+    /* Define o cursor como ponteiro */
+    font-size: 1.5em;
+    /* Define o tamanho da fonte */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    margin-top: 20px;
+    /* Adiciona margem superior */
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+    /* Adiciona sombra */
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Adiciona transições */
+    animation: continuous-movement 0.9s ease-in-out infinite;
+    /* Adiciona animação contínua */
 }
 
 button#quem-sou-eu:hover {
-    background-color: var(--button-hover-color); /* Muda a cor de fundo ao passar o mouse */
-    transform: translateY(-3px); /* Adiciona efeito de elevação */
-    box-shadow: 0 6px 8px var(--box-shadow-color); /* Adiciona sombra mais intensa */
+    background-color: var(--button-hover-color);
+    /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-3px);
+    /* Adiciona efeito de elevação */
+    box-shadow: 0 6px 8px var(--box-shadow-color);
+    /* Adiciona sombra mais intensa */
 }
 
 @keyframes continuous-movement {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
 
 .hidden {
-    display: none; /* Esconde o elemento */
+    display: none;
+    /* Esconde o elemento */
 }
 
 /* Estilo para a seção de conteúdo "Sobre Mim" */
 section#conteudo {
-    background-color: var(--content-background-color); /* Define a cor de fundo */
+    background-color: var(--content-background-color);
+    /* Define a cor de fundo */
     padding: 0;
-    text-align: left; /* Alinha o texto à esquerda */
-    max-width: 800px; /* Define a largura máxima */
-    margin: 150px auto; /* Centraliza a seção e adiciona margens acima e abaixo */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    max-width: 800px;
+    /* Define a largura máxima */
+    margin: 150px auto;
+    /* Centraliza a seção e adiciona margens acima e abaixo */
     position: relative;
 }
 
 /* Estilo para a foto de perfil */
 .profile-photo {
-    height: 200px; /* Define a altura */
-    width: auto; /* Define a largura */
-    border-radius: 8px; /* Define as bordas como arredondadas */
-    display: block; /* Exibe o elemento como um bloco */
-    margin: 0 auto 40px; /* Centraliza a imagem e adiciona margem inferior */
-    border: #F97B22 solid 3px; /* Define a borda */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona mais sombra */
-    animation: subtle-move 1s infinite alternate ease-in-out; /* Acelera a animação */
+    height: 200px;
+    /* Define a altura */
+    width: auto;
+    /* Define a largura */
+    border-radius: 8px;
+    /* Define as bordas como arredondadas */
+    display: block;
+    /* Exibe o elemento como um bloco */
+    margin: 0 auto 40px;
+    /* Centraliza a imagem e adiciona margem inferior */
+    border: #F97B22 solid 3px;
+    /* Define a borda */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Adiciona mais sombra */
+    animation: subtle-move 1s infinite alternate ease-in-out;
+    /* Acelera a animação */
 }
 
 /* Define a animação de movimento sutil */
 @keyframes subtle-move {
     0% {
-        transform: translateY(0); /* Posição inicial */
+        transform: translateY(0);
+        /* Posição inicial */
     }
+
     100% {
-        transform: translateY(-5px); /* Move para cima */
+        transform: translateY(-5px);
+        /* Move para cima */
     }
 }
 
@@ -147,186 +212,301 @@ section#conteudo {
 
 /* Estilo para o texto do conteúdo */
 .content-text {
-    margin-top: 20px; /* Adiciona margem superior */
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    margin-top: 20px;
+    /* Adiciona margem superior */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
 }
 
 /* Estilo para o triângulo da seção de conteúdo */
 .triangle-right {
-    display: flex; /* Usa o modelo de caixa flexível */
-    justify-content: flex-end; /* Alinha os itens à direita */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    transform: rotate(0deg); /* Define a rotação */
-    margin-top: -20px; /* Adiciona margem superior negativa */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    justify-content: flex-end;
+    /* Alinha os itens à direita */
+    align-items: flex-start;
+    /* Alinha os itens ao topo */
+    transform: rotate(0deg);
+    /* Define a rotação */
+    margin-top: -20px;
+    /* Adiciona margem superior negativa */
 }
 
 /* Estilo para a seção "Projetos Acadêmicos" */
 #projetos-academicos {
-    margin: 150px 0; /* Adiciona margens acima e abaixo */
+    margin: 150px 0;
+    /* Adiciona margens acima e abaixo */
 }
 
 /* Estilo para os botões de projeto */
 .project-buttons {
-    display: flex; /* Usa o modelo de caixa flexível */
-    flex-wrap: wrap; /* Permite a quebra de linha dos botões */
-    gap: 20px; /* Adiciona espaço entre os botões */
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    margin-bottom: 50px; /* Adiciona margem inferior */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    flex-wrap: wrap;
+    /* Permite a quebra de linha dos botões */
+    gap: 20px;
+    /* Adiciona espaço entre os botões */
+    justify-content: center;
+    /* Centraliza os botões horizontalmente */
+    margin-bottom: 50px;
+    /* Adiciona margem inferior */
 }
 
 .project-button {
-    padding: 15px 30px; /* Adiciona preenchimento interno */
-    background-color: var(--highlight-color); /* Define a cor de fundo */
+    padding: 15px 30px;
+    /* Adiciona preenchimento interno */
+    background-color: var(--highlight-color);
+    /* Define a cor de fundo */
     border: none;
-    color: #fff; /* Define a cor do texto */
-    cursor: pointer; /* Define o cursor como ponteiro */
-    font-size: 1.2em; /* Define o tamanho da fonte */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    width: 250px; /* Define a largura dos botões */
-    box-shadow: 0 4px 6px var(--box-shadow-color); /* Adiciona sombra */
-    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições */
+    color: #fff;
+    /* Define a cor do texto */
+    cursor: pointer;
+    /* Define o cursor como ponteiro */
+    font-size: 1.2em;
+    /* Define o tamanho da fonte */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    width: 250px;
+    /* Define a largura dos botões */
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+    /* Adiciona sombra */
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Adiciona transições */
 }
 
 .project-button:hover {
-    background-color: var(--button-hover-color); /* Muda a cor de fundo ao passar o mouse */
-    transform: translateY(-3px); /* Adiciona efeito de elevação */
-    box-shadow: 0 6px 8px var(--box-shadow-color); /* Adiciona sombra mais intensa */
+    background-color: var(--button-hover-color);
+    /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-3px);
+    /* Adiciona efeito de elevação */
+    box-shadow: 0 6px 8px var(--box-shadow-color);
+    /* Adiciona sombra mais intensa */
 }
 
 /* Estilo para os detalhes do projeto */
 .project-details {
-    text-align: left; /* Alinha o texto à esquerda */
-    margin: 0 auto; /* Centraliza a seção */
-    max-width: 800px; /* Define a largura máxima */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    margin: 0 auto;
+    /* Centraliza a seção */
+    max-width: 800px;
+    /* Define a largura máxima */
 }
 
 .project-detail {
-    margin-bottom: 50px; /* Adiciona margem inferior */
+    margin-bottom: 50px;
+    /* Adiciona margem inferior */
 }
 
-.project-detail img{
-    width: 100%; /* Define a largura como 100% */
-    height: auto; /* Define a altura automaticamente */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    margin-bottom: 20px; /* Adiciona margem inferior */
-    border: #000 solid 1px; /* Adiciona uma borda sólida */
-} 
+.project-detail img {
+    width: 100%;
+    /* Define a largura como 100% */
+    height: auto;
+    /* Define a altura automaticamente */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
+    border: #000 solid 1px;
+    /* Adiciona uma borda sólida */
+}
 
 .project-detail iframe {
-    width: 100%; /* Largura como 100% do elemento pai */
-    height: 60vh; /* Altura como 60% da altura da viewport */
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    margin-bottom: 20px; /* Adiciona margem inferior */
-    border: #000 solid 1px; /* Adiciona uma borda sólida */
+    width: 100%;
+    /* Largura como 100% do elemento pai */
+    height: 60vh;
+    /* Altura como 60% da altura da viewport */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
+    border: #000 solid 1px;
+    /* Adiciona uma borda sólida */
 }
 
 /* Estilo para o triângulo fixo e o texto ao lado dele */
 .fixed-triangle {
-    position: fixed; /* Define a posição como fixa */
-    bottom: 20px; /* Define a distância da parte inferior */
-    right: 20px; /* Define a distância da parte direita */
-    display: flex; /* Usa o modelo de caixa flexível */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    cursor: pointer; /* Define o cursor como ponteiro */
-    flex-direction: column; /* Direciona os itens em coluna */
-    align-items: center; /* Alinha os itens ao centro */
+    position: fixed;
+    /* Define a posição como fixa */
+    bottom: 20px;
+    /* Define a distância da parte inferior */
+    right: 20px;
+    /* Define a distância da parte direita */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    cursor: pointer;
+    /* Define o cursor como ponteiro */
+    flex-direction: column;
+    /* Direciona os itens em coluna */
+    align-items: center;
+    /* Alinha os itens ao centro */
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
 }
 
 .triangle-container {
-    display: flex; /* Usa o modelo de caixa flexível */
-    flex-direction: column; /* Direciona os itens em coluna */
-    align-items: center; /* Alinha os itens no centro */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    flex-direction: column;
+    /* Direciona os itens em coluna */
+    align-items: center;
+    /* Alinha os itens no centro */
 }
 
 .triangle-container .triangle {
     width: 0;
     height: 0;
-    border-left: 20px solid transparent; /* Define as bordas laterais como transparentes */
-    border-right: 20px solid transparent; /* Define as bordas laterais como transparentes */
-    margin-bottom: 5px; /* Adiciona margem inferior */
+    border-left: 20px solid transparent;
+    /* Define as bordas laterais como transparentes */
+    border-right: 20px solid transparent;
+    /* Define as bordas laterais como transparentes */
+    margin-bottom: 5px;
+    /* Adiciona margem inferior */
 }
 
 .triangle-container .triangle-filled {
-    border-bottom: 30px solid var(--highlight-color); /* Triângulo preenchido */
+    border-bottom: 30px solid var(--highlight-color);
+    /* Triângulo preenchido */
 }
 
 .triangle-container .triangle-outline {
-    border-bottom: 30px solid transparent; /* Triângulo de borda */
-    border-bottom-color: var(--highlight-color); /* Cor da borda */
+    border-bottom: 30px solid transparent;
+    /* Triângulo de borda */
+    border-bottom-color: var(--highlight-color);
+    /* Cor da borda */
 }
 
 .triangle-container .triangle-outline.opacity1 {
-    opacity: 0.75; /* Opacidade 75% */
+    opacity: 0.75;
+    /* Opacidade 75% */
 }
 
 .triangle-container .triangle-outline.opacity2 {
-    opacity: 0.5; /* Opacidade 50% */
+    opacity: 0.5;
+    /* Opacidade 50% */
 }
 
 .triangle-container .triangle-outline.opacity3 {
-    opacity: 0.25; /* Opacidade 25% */
+    opacity: 0.25;
+    /* Opacidade 25% */
 }
 
 /* Animação para os triângulos */
 @keyframes move-up-down {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 .triangle-container .triangle:nth-child(1) {
     animation: move-up-down 1s infinite alternate;
-    animation-delay: 0.6s; /* Adiciona o atraso para o primeiro triângulo */
+    animation-delay: 0.6s;
+    /* Adiciona o atraso para o primeiro triângulo */
 }
 
 .triangle-container .triangle:nth-child(2) {
     animation: move-up-down 1s infinite alternate;
-    animation-delay: 0.4s; /* Adiciona o atraso para o segundo triângulo */
+    animation-delay: 0.4s;
+    /* Adiciona o atraso para o segundo triângulo */
 }
 
 .triangle-container .triangle:nth-child(3) {
     animation: move-up-down 1s infinite alternate;
-    animation-delay: 0.2s; /* Adiciona o atraso para o terceiro triângulo */
+    animation-delay: 0.2s;
+    /* Adiciona o atraso para o terceiro triângulo */
 }
 
 .triangle-container .triangle:nth-child(4) {
     animation: move-up-down 1s infinite alternate;
-    animation-delay: 0s; /* Sem atraso para o quarto triângulo */
+    animation-delay: 0s;
+    /* Sem atraso para o quarto triângulo */
 }
 
 .back-to-top-text {
-    font-size: 1.2em; /* Define o tamanho da fonte */
-    color: var(--highlight-color); /* Define a cor do texto */
-    text-decoration: none; /* Remove a sublinhado */
-    font-weight: bold; /* Define o peso da fonte como negrito */
-    margin-top: 10px; /* Adiciona margem acima */
+    font-size: 1.2em;
+    /* Define o tamanho da fonte */
+    color: var(--highlight-color);
+    /* Define a cor do texto */
+    text-decoration: none;
+    /* Remove a sublinhado */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+    margin-top: 10px;
+    /* Adiciona margem acima */
 }
+
 /* Estilo para a seção "Projetos de Pesquisa Científica" */
 #projetos-pesquisa-cientifica {
-    margin: 150px 0; /* Adiciona margens acima e abaixo */
-    text-align: center; /* Centraliza o texto */
-    max-width: 800px; /* Define a largura máxima */
-    margin: 150px auto; /* Centraliza horizontalmente a seção e adiciona margens acima e abaixo */
+    margin: 150px 0;
+    /* Adiciona margens acima e abaixo */
+    text-align: center;
+    /* Centraliza o texto */
+    max-width: 800px;
+    /* Define a largura máxima */
+    margin: 150px auto;
+    /* Centraliza horizontalmente a seção e adiciona margens acima e abaixo */
 }
 
 #projetos-pesquisa-cientifica h2 {
-    font-size: 2.5em; /* Define o tamanho da fonte */
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 2.5em;
+    /* Define o tamanho da fonte */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
 }
 
 #projetos-pesquisa-cientifica p {
-    font-size: 1.2em; /* Define o tamanho da fonte */
-    line-height: 1.6; /* Define a altura da linha */
-    margin-bottom: 20px; /* Adiciona margem inferior */
-    text-align: justify; /* Justifica o texto para melhor legibilidade */
+    font-size: 1.2em;
+    /* Define o tamanho da fonte */
+    line-height: 1.6;
+    /* Define a altura da linha */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
+    text-align: justify;
+    /* Justifica o texto para melhor legibilidade */
 }
 
 #projetos-pesquisa-cientifica a {
-    color: var(--highlight-color); /* Define a cor do link */
-    text-decoration: none; /* Remove a sublinhado */
-    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: var(--highlight-color);
+    /* Define a cor do link */
+    text-decoration: none;
+    /* Remove a sublinhado */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
 }
 
 #projetos-pesquisa-cientifica a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
 }
 
+/* Estilo para a seção Habilidades */
+#habilidades {
+    text-align: center; /* Centraliza o texto */
+    margin: 150px 0; /* Adiciona margens acima e abaixo */
+}
+
+#habilidades h2 {
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    margin-bottom: 40px; /* Adiciona margem inferior */
+}
+
+.skills {
+    max-width: 800px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza a seção */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.skills p {
+    font-size: 1.2em; /* Define o tamanho da fonte */
+    line-height: 1.5; /* Define a altura da linha */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+.skills strong {
+    color: var(--highlight-color); /* Define a cor do texto */
+}
