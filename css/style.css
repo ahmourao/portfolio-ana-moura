@@ -342,7 +342,8 @@ section#conteudo {
     /* Direciona os itens em coluna */
     align-items: center;
     /* Alinha os itens ao centro */
-    z-index: 1000; /* Garante que esteja acima de outros elementos */
+    z-index: 1000;
+    /* Garante que esteja acima de outros elementos */
 }
 
 .triangle-container {
@@ -486,29 +487,40 @@ section#conteudo {
 
 /* Estilo para a seção Habilidades */
 #habilidades {
-    text-align: center; /* Centraliza o texto */
-    margin: 150px 0; /* Adiciona margens acima e abaixo */
+    text-align: center;
+    /* Centraliza o texto */
+    margin: 150px 0;
+    /* Adiciona margens acima e abaixo */
 }
 
 #habilidades h2 {
-    font-size: 2.5em; /* Define o tamanho da fonte */
-    margin-bottom: 40px; /* Adiciona margem inferior */
+    font-size: 2.5em;
+    /* Define o tamanho da fonte */
+    margin-bottom: 40px;
+    /* Adiciona margem inferior */
 }
 
 .skills {
-    max-width: 800px; /* Define a largura máxima */
-    margin: 0 auto; /* Centraliza a seção */
-    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 800px;
+    /* Define a largura máxima */
+    margin: 0 auto;
+    /* Centraliza a seção */
+    text-align: left;
+    /* Alinha o texto à esquerda */
 }
 
 .skills p {
-    font-size: 1.2em; /* Define o tamanho da fonte */
-    line-height: 1.5; /* Define a altura da linha */
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 1.2em;
+    /* Define o tamanho da fonte */
+    line-height: 1.5;
+    /* Define a altura da linha */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
 }
 
 .skills strong {
-    color: var(--highlight-color); /* Define a cor do texto */
+    color: var(--highlight-color);
+    /* Define a cor do texto */
 }
 
 
@@ -621,8 +633,13 @@ section#conteudo {
 }
 
 @keyframes move-up-down {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 .triangle-container .triangle:nth-child(1) {
@@ -655,49 +672,142 @@ section#conteudo {
 
 /* Estilo para a seção de Currículo */
 #curriculo {
-    margin: 150px 0; /* Adiciona margens acima e abaixo */
-    text-align: center; /* Centraliza o texto */
+    margin: 150px 0;
+    /* Adiciona margens acima e abaixo */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
 #curriculo h2 {
-    font-size: 2.5em; /* Define o tamanho da fonte */
-    margin-bottom: 50px; /* Adiciona margem inferior */
+    font-size: 2.5em;
+    /* Define o tamanho da fonte */
+    margin-bottom: 50px;
+    /* Adiciona margem inferior */
 }
 
 .curriculo-container {
-    display: flex; /* Usa o modelo de caixa flexível */
-    justify-content: space-around; /* Distribui o espaço ao redor dos itens */
-    flex-wrap: wrap; /* Permite a quebra de linha dos itens */
-    gap: 40px; /* Adiciona espaço entre os itens */
+    display: flex;
+    /* Usa o modelo de caixa flexível */
+    justify-content: space-around;
+    /* Distribui o espaço ao redor dos itens */
+    flex-wrap: wrap;
+    /* Permite a quebra de linha dos itens */
+    gap: 40px;
+    /* Adiciona espaço entre os itens */
 }
 
 .curriculo-section {
-    flex: 1; /* Faz com que cada seção ocupe o mesmo espaço */
-    min-width: 300px; /* Define a largura mínima */
+    flex: 1;
+    /* Faz com que cada seção ocupe o mesmo espaço */
+    min-width: 300px;
+    /* Define a largura mínima */
 }
 
 .curriculo-section h3 {
-    font-size: 1.5em; /* Define o tamanho da fonte */
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 1.5em;
+    /* Define o tamanho da fonte */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
 }
 
 .curriculo-button {
-    padding: 15px 30px; /* Adiciona preenchimento interno */
-    background-color: var(--highlight-color); /* Define a cor de fundo */
+    padding: 15px 30px;
+    /* Adiciona preenchimento interno */
+    background-color: var(--highlight-color);
+    /* Define a cor de fundo */
     border: none;
-    color: #fff; /* Define a cor do texto */
-    cursor: pointer; /* Define o cursor como ponteiro */
-    font-size: 1.2em; /* Define o tamanho da fonte */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    width: 250px; /* Define a largura dos botões */
-    box-shadow: 0 4px 6px var(--box-shadow-color); /* Adiciona sombra */
-    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições */
+    color: #fff;
+    /* Define a cor do texto */
+    cursor: pointer;
+    /* Define o cursor como ponteiro */
+    font-size: 1.2em;
+    /* Define o tamanho da fonte */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    width: 250px;
+    /* Define a largura dos botões */
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+    /* Adiciona sombra */
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Adiciona transições */
     display: block;
     margin: 30px auto;
 }
 
 .curriculo-button:hover {
-    background-color: var(--button-hover-color); /* Muda a cor de fundo ao passar o mouse */
-    transform: translateY(-3px); /* Adiciona efeito de elevação */
-    box-shadow: 0 6px 8px var(--box-shadow-color); /* Adiciona sombra mais intensa */
+    background-color: var(--button-hover-color);
+    /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-3px);
+    /* Adiciona efeito de elevação */
+    box-shadow: 0 6px 8px var(--box-shadow-color);
+    /* Adiciona sombra mais intensa */
+}
+
+
+footer {
+    background-color: var(--background-color);
+    /* Cor de fundo */
+    padding: 20px 0;
+    /* Espaçamento interno */
+    border-top: 2px solid var(--border-color);
+    /* Borda superior */
+    margin-top: 50px;
+    /* Espaçamento superior */
+}
+
+.footer-container {
+    display: flex;
+    /* Flexbox */
+    justify-content: space-between;
+    /* Espaço entre os itens */
+    align-items: center;
+    /* Alinhamento vertical */
+    max-width: 1200px;
+    /* Largura máxima */
+    margin: 0 auto;
+    /* Centralização */
+    padding: 0 20px;
+    /* Espaçamento interno */
+}
+
+.contact-info {
+    text-align: left;
+    /* Alinhamento à esquerda */
+    color: var(--text-color);
+    /* Cor do texto */
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+    font-size: 1.5em;
+    /* Tamanho da fonte */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    /* Espaçamento vertical */
+    font-size: 1em;
+    /* Tamanho da fonte */
+}
+
+.logo-container {
+    text-align: right;
+    /* Alinhamento à direita */
+    color: var(--text-color);
+    /* Cor do texto */
+}
+
+.logo-container img {
+    max-width: 150px;
+    /* Largura máxima */
+    height: auto;
+    /* Altura automática */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+.logo-container p {
+    font-size: 1em;
+    /* Tamanho da fonte */
 }
