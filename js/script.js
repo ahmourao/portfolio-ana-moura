@@ -22,6 +22,7 @@ document.getElementById('link-sobre-mim').addEventListener('click', function() {
     document.getElementById('projetos-pesquisa-cientifica').classList.add('hidden');
     document.getElementById('habilidades').classList.add('hidden');
     document.getElementById('formacoes-complementares').classList.add('hidden');
+    document.getElementById('curriculo').classList.add('hidden');
     document.getElementById('sobre-mim').scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -35,6 +36,7 @@ document.getElementById('link-projetos-academicos').addEventListener('click', fu
     document.getElementById('conteudo').classList.add('hidden');
     document.getElementById('habilidades').classList.add('hidden');
     document.getElementById('formacoes-complementares').classList.add('hidden');
+    document.getElementById('curriculo').classList.add('hidden');
     document.getElementById('projetos-academicos').scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -48,6 +50,7 @@ document.getElementById('link-projetos-pesquisa-cientifica').addEventListener('c
     document.getElementById('conteudo').classList.add('hidden');
     document.getElementById('habilidades').classList.add('hidden');
     document.getElementById('formacoes-complementares').classList.add('hidden');
+    document.getElementById('curriculo').classList.add('hidden');
     document.getElementById('projetos-pesquisa-cientifica').scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -61,8 +64,11 @@ document.getElementById('link-habilidades').addEventListener('click', function()
     document.getElementById('conteudo').classList.add('hidden');
     document.getElementById('projetos-pesquisa-cientifica').classList.add('hidden');
     document.getElementById('formacoes-complementares').classList.add('hidden');
+    document.getElementById('curriculo').classList.add('hidden');
     document.getElementById('habilidades').scrollIntoView({ behavior: 'smooth' });
 });
+
+
 
 // Navega para a seção "Formações Complementares" e destaca o item de navegação ativo
 document.getElementById('link-formacoes-complementares').addEventListener('click', function() {
@@ -74,7 +80,22 @@ document.getElementById('link-formacoes-complementares').addEventListener('click
     document.getElementById('conteudo').classList.add('hidden');
     document.getElementById('projetos-pesquisa-cientifica').classList.add('hidden');
     document.getElementById('habilidades').classList.add('hidden');
+    document.getElementById('curriculo').classList.add('hidden');
     document.getElementById('formacoes-complementares').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Navega para a seção "Curriculo" e destaca o item de navegação ativo
+document.getElementById('link-curriculo').addEventListener('click', function() {
+    document.querySelector('li.active').classList.remove('active');
+    this.classList.add('active');
+    document.getElementById('curriculo').classList.remove('hidden');
+    document.getElementById('sobre-mim').classList.add('hidden');
+    document.getElementById('projetos-academicos').classList.add('hidden');
+    document.getElementById('conteudo').classList.add('hidden');
+    document.getElementById('projetos-pesquisa-cientifica').classList.add('hidden');
+    document.getElementById('habilidades').classList.add('hidden');
+    document.getElementById('formacoes-complementares').classList.add('hidden');
+    document.getElementById('curriculo').scrollIntoView({ behavior: 'smooth' });
 });
 
 // Rola a tela até o topo ao clicar no triângulo
