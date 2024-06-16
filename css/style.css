@@ -23,6 +23,9 @@ body {
     /* Define a cor do texto */
     scroll-behavior: smooth;
     /* Suaviza a rolagem */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Define o estilo do cabeçalho */
@@ -97,6 +100,7 @@ main {
     /* Centraliza o texto */
     padding: 0 150px;
     /* Adiciona preenchimento interno */
+    flex: 1;
 }
 
 /* Estilo para a seção "Sobre mim" */
@@ -525,7 +529,7 @@ section#conteudo {
     /* Adiciona margem inferior */
 }
 
-.skills strong {
+.skills strong, .content-text strong {
     color: var(--highlight-color);
     /* Define a cor do texto */
 }
@@ -760,6 +764,7 @@ footer {
     /* Borda superior */
     margin-top: 50px;
     /* Espaçamento superior */
+
 }
 
 .footer-container {
